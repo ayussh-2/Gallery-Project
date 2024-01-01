@@ -51,7 +51,7 @@ function scrollToSection(sectionId) {
     }
 }
 
-var theme1 = ["#181818", "#f4f4f6", "#e6e6e9", "#fff"];
+var theme1 = ["#181818", "#cecece", "#e6e6e9", "#fff"];
 var theme2 = ["#84dcc6", "#81d0d6", "#aed9e0", "#ffa69e"];
 var theme3 = ["#CACACA", "#D7C5B0", "#F5F1EE", "#E3E3E3"];
 var i = 0;

@@ -186,6 +186,13 @@ a {
 ol li {
     margin-top: 5px;
 }
+ol li a {
+    color: black;
+    /* animation: pulsate 1s infinite; */
+}
+.m {
+    margin-top: 35px;
+}
 #theme1 .backdrop {
     height: 325px;
     background-image: url("https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
@@ -236,13 +243,14 @@ ol li {
     margin-left: 40px;
     transition: 0.3s;
     animation: fade 1s;
+    transform: scale(1.5);
 }
 #theme1 .changebg:hover {
     animation: rangbiranga 1s infinite;
     cursor: pointer;
 }
 #theme1 .changebg:active {
-    transform: scale(0.85);
+    transform: scale(1.4);
 }
 #theme1 .navTimer {
     text-align: center;
@@ -467,16 +475,17 @@ ol li {
     bottom: 0px;
     left: 0px;
     padding: 25px; */
-    margin-top: 45px;
+    margin-top: 55px;
     transition: 0.3s;
     animation: fade 1s;
+    transform: scale(1.5);
 }
 #theme2 .changebg:hover {
     animation: rangbiranga 1s infinite;
     cursor: pointer;
 }
 #theme2 .changebg:active {
-    transform: scale(0.85);
+    transform: scale(1.4);
 }
 #theme2 .logo {
     font-family: amster;
@@ -674,14 +683,14 @@ ol li {
     padding: 25px;
     transition: 0.3s;
     animation: fade 1s;
+    transform: scale(1.5);
 }
 #theme3 .changebg:hover {
-    transform: scale(1.3);
     animation: rangbiranga 1s infinite;
     cursor: pointer;
 }
 #theme3 .changebg:active {
-    transform: scale(1.1);
+    transform: scale(1.4);
 }
 #theme3 #footer {
     background-color: #12211c;
