@@ -1,0 +1,24 @@
+@font-face {
+    font-family: amster;
+    src: url(./Amsterdam\ Four_ttf\ 400.ttf);
+}
+
+@font-face {
+    font-family: antic;
+    src: url(./Antic-Regular.ttf);
+}
+
+@font-face {
+    font-family: yeseva;
+    src: url(./YesevaOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: glaci;
+    src: url(./GlacialIndifference-Regular.otf);
+}
+
+@font-face {
+    font-family: alien;
+    src: url(./Aileron-Regular.otf);
+}

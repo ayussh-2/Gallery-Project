@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shutter Symphony</title>
+
+        <!--FontAwesome-->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!--FontAwesome-->
+
+        <!-- jquery -->
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+            integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+            crossorigin="anonymous"
+        ></script>
+        <!-- jquery -->
+
+        <link rel="stylesheet" href="./fonts/fonts.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="modal" class="modal">
+            <div class="card">
+                <div class="cardtxt">
+                    <div class="close" onclick="hideModal()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="content">
+                        <ul style="text-align: left">
+                            <li>
+                                <i class="fa-solid fa-paint-roller"></i
+                                >&emsp;Changes the background color!
+                            </li>
+                            <li>
+                                <img
+                                    src="./img/charms.svg"
+                                    alt=""
+                                    id="Modalstar"
+                                />
+                                Changes the whole mood of the page!
+                            </li>
+                            <li style="margin-top: 35px">
+                                Dependencies used:
+                                <ol style="margin-top: 20px">
+                                    <li>FontAwesome</li>
+                                    <li>Jquery</li>
+                                    <li>Custom fonts</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="theme1">
+            <div id="navbar">
+                <div class="backdrop">
+                    <div class="navlinks">
+                        <div class="navChild left">
+                            <a href="#">HOME</a><a href="#">ABOUT</a>
+                        </div>
+                        <div id="navLogo">
+                            <a class="logo"> Shutter S&nbsp;&nbsp;ymphony</a>
+                        </div>
+                        <div class="navChild right">
+                            <a href="#">CONTACT</a> <a href="#">BLOG</a>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: space-between">
+                        <div
+                            class="changebg"
+                            onclick="changeBg('theme1',theme1)"
+                        >
+                            <i class="fa-solid fa-paint-roller"></i>
+                        </div>
+                        <div class="navTimer">
+                            <span class="hr">12</span>
+                            <span class="timeColon">:</span>
+                            <span class="min">50</span>
+                            <span class="type">PM</span>
+                        </div>
+                        <div class="magicButton" onclick="changeMood()">
+                            <img src="./img/charms.svg" alt="" id="star" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="container">
+                <div class="upperTxt">
+                    <p class="first">THE SELECTION</p>
+                    <p class="second">FROM OUR FINEST</p>
+                </div>
+                <div class="gallery">
+                    <div class="r-1">
+                        <div class="r1-c1">
+                            <div class="img-container wide">
+                                <img
+                                    src="https://images.pexels.com/photos/3848158/pexels-photo-3848158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    class="wide"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="img-container widerLonger2">
+                                <img
+                                    src="https://images.pexels.com/photos/4451431/pexels-photo-4451431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    class="widerLonger2"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div class="r1-c2">
+                            <div class="r1-c2-c">
+                                <div class="img-container long">
+                                    <img
+                                        src="https://images.pexels.com/photos/7537296/pexels-photo-7537296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        class="long"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="img-container widerLonger">
+                                    <img
+                                        src="https://images.pexels.com/photos/7537292/pexels-photo-7537292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        class="widerLonger"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <div class="r1-c2-c2">
+                                <div class="img-container wider2">
+                                    <img
+                                        src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        class="wider2"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="r-2">
+                        <div class="r2-c1">
+                            <div class="img-container wider3">
+                                <img
+                                    src="https://images.pexels.com/photos/5989242/pexels-photo-5989242.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    class="wider3"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div class="r2-c2">
+                            <div class="img-container wider3">
+                                <img
+                                    src="https://images.pexels.com/photos/3293148/pexels-photo-3293148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+                                    "
+                                    class="wider3"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="r-3">
+                        <div class="r3-c1">
+                            <div class="img-container widerLonger3">
+                                <img
+                                    src="https://images.pexels.com/photos/5145303/pexels-photo-5145303.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    class="widerLonger3"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div class="r3-c2">
+                            <div class="img-container wider4">
+                                <img
+                                    src="https://images.pexels.com/photos/46253/mt-fuji-sea-of-clouds-sunrise-46253.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    class="wider4"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="img-container wider4">
+                                <img
+                                    src="https://images.pexels.com/photos/13712307/pexels-photo-13712307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    class="wider4"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="r-4">
+                        <div class="r4-c1">
+                            <div class="img-container wider5">
+                                <img
+                                    src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    class="wider5"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div class="r4-c2">
+                            <div class="img-container sq">
+                                <img
+                                    src="https://images.unsplash.com/photo-1638140481609-ec648a2edbea?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    class="sq"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div class="fLogo">
+                    <a class="logo"> Shutter S&nbsp;&nbsp;ymphony</a>
+                </div>
+
+                <div class="fTxt">
+                    <p>
+                        <a href="https://github.com/ayussh-2" class="self"
+                            >Designed & Developed With
+                            <span
+                                ><i class="fa-regular fa-heart heart"></i
+                            ></span>
+                            By AYUSH</a
+                        >
+                    </p>
+                </div>
+
+                <div class="social">
+                    <a href="https://github.com/ayussh-2"
+                        ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a href="https://www.instagram.com/__ayussshh__/"
+                        ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                    <a href="https://twitter.com/"
+                        ><i class="fa-brands fa-x-twitter"></i
+                    ></a>
+                    <a href="https://www.facebook.com/"
+                        ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                    <a href="https://www.pexels.com/@ayush-800654/"
+                        ><img
+                            src="./img/pexels-svgrepo-com.svg"
+                            alt=""
+                            class="pexels"
+                    /></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="theme2">
+            <div id="navbar">
+                <div class="backdrop" style="text-align: center">
+                    <div class="navTimer">
+                        <span class="hr">12</span>
+                        <span class="timeColon">:</span>
+                        <span class="min">50</span>
+                        <span class="type">PM</span>
+                    </div>
+                    <div id="navLogo">
+                        <a class="logo"> Shutter S&nbsp;&nbsp;ymphony</a>
+                    </div>
+                    <div style="display: flex; gap: 30px">
+                        <div
+                            class="changebg"
+                            onclick="changeBg('theme2',theme2)"
+                        >
+                            <i class="fa-solid fa-paint-roller"></i>
+                        </div>
+                        <div class="magicButton" onclick="changeMood()">
+                            <img src="./img/charms.svg" alt="" id="star" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="container">
+                <div class="page page1">
+                    <div><p class="abtGal">Our Pastel Collection</p></div>
+                    <div class="r-1">
+                        <div class="emoji">🌾</div>
+                        <div></div>
+                        <div class="img-container longer">
+                            <img
+                                src="https://images.unsplash.com/photo-1601979689063-cb474664e70b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                class="longer"
+                                alt=""
+                            />
+                        </div>
+                        <div class="img-container longer">
+                            <img
+                                src="https://images.unsplash.com/photo-1522814208878-08129b4b76f3?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                class="longer"
+                                alt=""
+                            />
+                        </div>
+                        <div></div>
+                        <div class="emoji">🏖️</div>
+                        <div class="emoji">🎈</div>
+                        <div></div>
+                        <div class="img-container longer">
+                            <img
+                                src="https://images.unsplash.com/photo-1429087969512-1e85aab2683d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                class="longer"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="page page2">
+                    <div class="r-2">
+                        <div>
+                            <div class="img-container widerLonger">
+                                <img
+                                    src="https://images.pexels.com/photos/2088170/pexels-photo-2088170.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    class="widerLonger"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div></div>
+                        <div class="emoji">☁️</div>
+                        <div class="emoji">📖</div>
+                        <div></div>
+                        <div>
+                            <div class="img-container widerLonger">
+                                <img
+                                    src="https://images.pexels.com/photos/4210778/pexels-photo-4210778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    class="widerLonger"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div>
+                            <div class="img-container widerLonger">
+                                <img
+                                    src="https://images.pexels.com/photos/2088203/pexels-photo-2088203.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    class="widerLonger"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div></div>
+                        <div class="emoji">✈️</div>
+                    </div>
+                </div>
+                <div class="page page3">
+                    <div class="r-2">
+                        <div class="emoji">🍭</div>
+                        <div></div>
+                        <div>
+                            <div class="img-container widerLonger">
+                                <img
+                                    src="https://images.pexels.com/photos/3866851/pexels-photo-3866851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    class="widerLonger"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div>
+                            <div class="img-container widerLonger">
+                                <img
+                                    src="https://images.pexels.com/photos/1162519/pexels-photo-1162519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    class="widerLonger"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div></div>
+                        <div class="emoji">⌚</div>
+                        <div class="emoji">🌺</div>
+                        <div></div>
+                        <div>
+                            <div class="img-container widerLonger">
+                                <img
+                                    src="https://images.pexels.com/photos/6913164/pexels-photo-6913164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    class="widerLonger"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div class="fLogo">
+                    <a class="logo"> Shutter S&nbsp;&nbsp;ymphony</a>
+                </div>
+
+                <div class="fTxt" style="font-family: glaci">
+                    <p>
+                        <a href="https://github.com/ayussh-2" class="self"
+                            >Designed & Developed With
+                            <span
+                                ><i class="fa-regular fa-heart heart"></i
+                            ></span>
+                            By AYUSH</a
+                        >
+                    </p>
+                </div>
+
+                <div class="social">
+                    <a href="https://github.com/ayussh-2"
+                        ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a href="https://www.instagram.com/__ayussshh__/"
+                        ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                    <a href="https://twitter.com/"
+                        ><i class="fa-brands fa-x-twitter"></i
+                    ></a>
+                    <a href="https://www.facebook.com/"
+                        ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                    <a href="https://www.pexels.com/@ayush-800654/"
+                        ><img
+                            src="./img/pexels-svgrepo-com.svg"
+                            alt=""
+                            class="pexels"
+                    /></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="theme3">
+            <div id="navbar">
+                <div class="backdrop" style="text-align: center">
+                    <div id="navLogo">
+                        <a class="logo"> Shutter S&nbsp;&nbsp;ymphony</a>
+                    </div>
+                    <div class="nav2">
+                        <div class="navTimer">
+                            <span class="hr">12</span>
+                            <span class="timeColon">:</span>
+                            <span class="min">50</span>
+                            <span class="type">PM</span>
+                        </div>
+                        &emsp;
+                        <div class="magicButton" onclick="changeMood()">
+                            <img src="./img/charms.svg" alt="" id="star" />
+                        </div>
+                    </div>
+                </div>
+                <div class="txt">
+                    <h1>GALLERY</h1>
+                    <h4>OUR&nbsp;&nbsp;FINEST&nbsp;&nbsp;COLLECTION</h4>
+                </div>
+                <div class="bttn">
+                    <button onclick="scrollToSection('gall')">
+                        CHECK IT OUT
+                    </button>
+                </div>
+                <div class="changebg" onclick="changeBg('theme3',theme3)">
+                    <i class="fa-solid fa-paint-roller"></i>
+                </div>
+            </div>
+            <div id="container">
+                <div class="gallery" id="gall">
+                    <div>
+                        <div class="img-container long">
+                            <img
+                                src="https://images.unsplash.com/photo-1525673617815-988a5db3e1e2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                class="long"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-container long">
+                            <img
+                                src="https://images.unsplash.com/photo-1623511966254-8488d189b7da?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                class="long"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-container long">
+                            <img
+                                src="https://images.unsplash.com/photo-1528653819828-d76e9e97770f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                class="long"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-container long">
+                            <img
+                                src="https://images.unsplash.com/photo-1532296267123-195fdf581f82?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                class="long"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-container long">
+                            <img
+                                src="https://images.unsplash.com/photo-1546889400-0befc996c89d?q=80&w=1983&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                class="long"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-container long">
+                            <img
+                                src="https://images.unsplash.com/photo-1517206577696-61bd6e54b558?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                class="long"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-container long">
+                            <img
+                                src="https://images.unsplash.com/photo-1574719657531-d59c5f82ea1d?q=80&w=1889&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                class="long"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-container long">
+                            <img
+                                src="https://images.unsplash.com/photo-1526846752811-bfd0f3db1434?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                class="long"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-container long">
+                            <img
+                                src="https://images.unsplash.com/photo-1592765393948-3f3d59d348c6?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                                    "
+                                class="long"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-container long">
+                            <img
+                                src="https://images.unsplash.com/photo-1516893842880-5d8aada7ac05?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                                    "
+                                class="long"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-container long">
+                            <img
+                                src="https://images.unsplash.com/photo-1599669846660-945c5c775181?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                                    "
+                                class="long"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-container long">
+                            <img
+                                src="https://images.unsplash.com/photo-1521134521200-c7c4b0d22ab7?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                                    "
+                                class="long"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div class="fLogo">
+                    <a class="logo" style="color: white">
+                        Shutter S&nbsp;&nbsp;ymphony</a
+                    >
+                </div>
+
+                <div class="fTxt">
+                    <p>
+                        <a href="https://github.com/ayussh-2" class="self"
+                            >Designed & Developed With
+                            <span
+                                ><i class="fa-regular fa-heart heart"></i
+                            ></span>
+                            By AYUSH</a
+                        >
+                    </p>
+                </div>
+
+                <div class="social">
+                    <a href="https://github.com/ayussh-2"
+                        ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a href="https://www.instagram.com/__ayussshh__/"
+                        ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                    <a href="https://twitter.com/"
+                        ><i class="fa-brands fa-x-twitter"></i
+                    ></a>
+                    <a href="https://www.facebook.com/"
+                        ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                    <a href="https://www.pexels.com/@ayush-800654/"
+                        ><img
+                            src="./img/pexels-svgrepo-com.svg"
+                            alt=""
+                            class="pexels"
+                    /></a>
+                </div>
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
