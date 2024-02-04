@@ -1,5 +1,6 @@
 $(document).ready(function () {
     setTime();
+    $(".burgerContent").hide();
     // $("#modal").hide();
     $("#theme2").hide();
     // $("#theme1").hide();
@@ -91,4 +92,8 @@ function changeBg(name, theme) {
 
 function hideModal() {
     $("#modal").hide();
+}
+
+function toggleMenu() {
+    $(".burgerContent").toggle();
 }

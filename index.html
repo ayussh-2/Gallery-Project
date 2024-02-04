@@ -75,8 +75,8 @@
                                     <li>Custom fonts</li>
                                 </ol>
                             </li>
-                            <li class="m">😬The page is not reponsive!</li>
-                            <li class="m">😉Will be updated soon!</li>
+                            <!-- <li class="m">😬The page is not reponsive!</li>
+                            <li class="m">😉Will be updated soon!</li> -->
                         </ul>
                     </div>
                 </div>
@@ -112,6 +112,36 @@
                         </div>
                         <div class="magicButton" onclick="changeMood()">
                             <img src="./img/charms.svg" alt="" id="star" />
+                        </div>
+                    </div>
+                </div>
+
+                <div id="mobile">
+                    <div class="mobileMenu">
+                        <div id="navLogo">
+                            <a class="logo"> Shutter S&nbsp;&nbsp;ymphony</a>
+                        </div>
+                        <div id="burger" onclick="toggleMenu()">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                    <div class="burgerContent">
+                        <div class="burgerContainer">
+                            <div class="navTimer2">
+                                <span class="hr">12</span>
+                                <span class="timeColon">:</span>
+                                <span class="min">50</span>
+                                <span class="type">PM</span>
+                            </div>
+                            <div class="magicButton" onclick="changeMood()">
+                                <img src="./img/charms.svg" alt="" id="star2" />
+                            </div>
+                            <div
+                                class="changebg2"
+                                onclick="changeBg('theme1',theme1)"
+                            >
+                                <i class="fa-solid fa-paint-roller"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -217,7 +247,7 @@
                     </div>
                     <div class="r-4">
                         <div class="r4-c1">
-                            <div class="img-container wider5">
+                            <div class="img-container wider5" id="adj">
                                 <img
                                     src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                     class="wider5"
@@ -226,7 +256,7 @@
                             </div>
                         </div>
                         <div class="r4-c2">
-                            <div class="img-container sq">
+                            <div class="img-container sq" id="adj">
                                 <img
                                     src="https://images.unsplash.com/photo-1638140481609-ec648a2edbea?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                     class="sq"
@@ -298,6 +328,35 @@
                         </div>
                         <div class="magicButton" onclick="changeMood()">
                             <img src="./img/charms.svg" alt="" id="star" />
+                        </div>
+                    </div>
+                </div>
+                <div id="mobile">
+                    <div class="mobileMenu">
+                        <div id="navLogo">
+                            <a class="logo"> Shutter S&nbsp;&nbsp;ymphony</a>
+                        </div>
+                        <div id="burger" onclick="toggleMenu()">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                    <div class="burgerContent">
+                        <div class="burgerContainer">
+                            <div class="magicButton" onclick="changeMood()">
+                                <img src="./img/charms.svg" alt="" id="star2" />
+                            </div>
+                            <div class="navTimer2">
+                                <span class="hr">12</span>
+                                <span class="timeColon">:</span>
+                                <span class="min">50</span>
+                                <span class="type">PM</span>
+                            </div>
+                            <div
+                                class="changebg2"
+                                onclick="changeBg('theme2',theme2)"
+                            >
+                                <i class="fa-solid fa-paint-roller"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
