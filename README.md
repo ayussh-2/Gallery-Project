@@ -21,7 +21,9 @@ Our website is built with a responsive design, ensuring an optimal viewing exper
 - **FontAwesome** 🔍: For stylish and scalable vector icons.
 - **jQuery** 💡: Simplifying JavaScript code and DOM manipulation.
 - **Custom Fonts** 🖋️: Enhancing the typography for a unique look.
-  Your contributions are welcomed!!😊
+  <br>Your contributions are welcomed!!</br>😊
+
+  Experience it ➡️ https://ayussh-2.github.io/shuttersymphony/
  Clone the repository:
 
    ```bash
