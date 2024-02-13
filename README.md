@@ -13,6 +13,9 @@ Elevate your mood with the "Change Theme" button, offering a variety of themes t
 ### 3. Responsive Design 📱
 Our website is built with a responsive design, ensuring an optimal viewing experience across various devices. Whether you're on a computer, tablet, or smartphone, enjoy the gallery seamlessly.
 
+## Image Sources Used:
+- **PEXELS**
+- **UNSPLASH**
 ## Technologies Used:
 
 - **HTML** 🌐: Structuring the content and layout of the website.
@@ -21,11 +24,10 @@ Our website is built with a responsive design, ensuring an optimal viewing exper
 - **FontAwesome** 🔍: For stylish and scalable vector icons.
 - **jQuery** 💡: Simplifying JavaScript code and DOM manipulation.
 - **Custom Fonts** 🖋️: Enhancing the typography for a unique look.
-  <br>Your contributions are welcomed!!</br>😊
-
-  Experience it ➡️ https://ayussh-2.github.io/shuttersymphony/
+<h3>Your contributions are welcomed!!😊</h3>
  Clone the repository:
 
    ```bash
    git clone https://github.com/ayussh-2/shutter-symphony.git
-
+```
+Experience it ➡️ https://ayussh-2.github.io/shuttersymphony/
